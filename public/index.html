@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>Image Hosting</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/css/styles.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <div class="container">
+        <h2>Image Hosting Service</h2>
+
+        <p>
+          <b>Note</b>: These images will be stored, so please don't upload personal files!
+        </p>
+        
+        <div class="view">
+          <h4 id="output"></h4>
+          <form enctype="multipart/form-data" method="POST" action="/api/uploaded">
+            <input id="inputfield" type="file" name="upfile" accept="image/*" required>
+            <input id="button" type="submit" value="Upload">
+          </form>
+        </div>
+        <p>Go to <b>[base url]</b>/images/<b>[image]</b> to view images</p>
+      </div>
+   </body>
+</html>
